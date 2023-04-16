@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* pc版 */
+body {
+    background: #e8d9bf;
+}
+
+/* ヘッダー */
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6.53% 0 2.51%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 226.7px;
+}
+
+.pc-nav ul {
+    display: flex;
+}
+
+.pc-nav ul li {
+    width: 105px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 54px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.pc-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.slider {
+    width: 100%;
+}
+
+/* メッセージ */
+.message {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 104px 0 80px 0;
+}
+.copy {
+    font-size: 30px;
+    text-align: center;
+}
+
+.message h2 {
+    font-size: 82px;
+    font-weight: normal;
+    line-height: 1.17;
+    margin: 40px 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.text {
+    font-size: 23px;
+    line-height: 1.65;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* 私たちについて */
+.ABOUT-US {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.ABOUT-US img {
+    width: 50%;
+    border-bottom-right-radius: 80px;
+}
+
+.about-us-text {
+    width: 50%;
+    margin-left: 80px;
+}
+
+.about-us-text h3 {
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 1.38;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    width: 411px;
+    font-size: 16px;
+    line-height: 1.62;
+    margin-bottom: 32px;
+}
+
+.about-us-text img {
+    width: 271px;
+    margin: 68px 0 56px 0;
+}
+
+/* メニュー */
+.MENU {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 88px 0 48px 0;
+}
+
+.MENU h2 {
+    width: 151px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 31.25%;
+}
+
+.box img {
+    border-top-right-radius: 40px;
+}
+
+.box h3 {
+    font-size: 38px;
+    color: #d30202;
+    position: relative;
+    right: -10px;
+    top: -10px;
+}
+
+.box p {
+    font-size: 17px;
+    line-height: 1.47;
+}
+
+/* ギャラリー */
+.GALLERY {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.GALLERY h2 {
+    width: 245px;
+    margin: 0 auto;
+    padding-bottom: 27px;
+}
+
+.gallery-wrap {
+    width: 100%;
+    display: flex;
+}
+
+.gallery-wrap img {
+    width: 20%;
+    justify-content: center;
+}
+
+/* イベント */
+.EVENT {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 54px 0 72px 0;
+}
+
+.EVENT h2 {
+    width: 174px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.event-wrap {
+    border: solid 3.68px #4f260b;
+    background-color: #fff;
+    padding: 40px 160px 16px 160px;
+}
+
+.event-wrap ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+.event-wrap ul li {
+    font: size 23px;
+    margin: 0 0 24px 64px;
+}
+
+.info {
+    border-bottom: solid 1px #4f260b;
+}
+
+/* アクセス */
+.ACCESS h2 {
+    width: 214px;
+    margin: 0 auto;
+}
+
+.map {
+    position: relative;
+    height: 471px;
+}
+.map iframe {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* フッター */
+footer {
+    height: 393px;
+    background: #fff;
+}
+
+.footer-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.footer-wrap h2 {
+    width: 227px;
+    margin-right: 64px;
+}
+
+.footer-wrap ul {
+    margin-right: 360px;
+}
+
+.footer-wrap ul li {
+    font-size: 20px;
+    line-height: 1.95;
+}
+
+footer p {
+    color: #e8d9bf;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* トップへボタン */
+.top-bottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 125px;
+}
