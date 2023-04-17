@@ -48,6 +48,11 @@ img {
     border: none;
 }
 
+/* スムーススクロール */
+html {
+    scroll-behavior: smooth;
+}
+
 /* pc版 */
 body {
     background: #e8d9bf;
@@ -80,7 +85,7 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-    margin-right: 54px;
+    margin: 0 10px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
@@ -122,13 +127,13 @@ body {
 
 /* 私たちについて */
 .ABOUT-US {
-    width: 1000px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
 
-.ABOUT-US img {
+.about-us-img {
     width: 50%;
     border-bottom-right-radius: 80px;
 }
@@ -243,18 +248,21 @@ body {
 }
 
 .event-wrap ul li {
-    font: size 23px;
-    margin: 0 0 24px 64px;
+    font-size: 23px;
+    margin-bottom: 24px;
 }
 
-.info {
-    border-bottom: solid 1px #4f260b;
+span {
+    /* border-bottom: solid 1px #4f260b; */
+    text-decoration: underline;
+    margin-left: 56px;
 }
 
 /* アクセス */
 .ACCESS h2 {
     width: 214px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .map {
@@ -275,10 +283,9 @@ footer {
 }
 
 .footer-wrap {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     padding: 80px 0;
 }
 
@@ -287,17 +294,14 @@ footer {
     margin-right: 64px;
 }
 
-.footer-wrap ul {
-    margin-right: 360px;
-}
-
 .footer-wrap ul li {
     font-size: 20px;
     line-height: 1.95;
+    color: #000;
 }
 
 footer p {
-    color: #e8d9bf;
+    color: #000;
     font-size: 16px;
     text-align: center;
 }
